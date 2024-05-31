@@ -7,7 +7,7 @@ st.sidebar.markdown('Desenvolvido por Diego Oliveira')
 
 st.divider()
 
-st.markdown("# Bem-Vindo ao analisador dos dados de Vendas")
+st.markdown("# Bem-Vindo ao App de analise vendas")
 
 st.divider()
 

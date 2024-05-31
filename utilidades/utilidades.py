@@ -3,6 +3,8 @@ import streamlit as st
 import pandas as pd
 
 
+COMISSAO = 0.08
+
 def leitura_de_dados():
     if not 'dados' in st.session_state:
         pasta_dataset = Path(__file__).parents[1] / "datasets"
@@ -14,6 +16,7 @@ def leitura_de_dados():
             'df_filiais': df_filiais,
             'df_produtos': df_produtos
         }
+        st.session_state['caminho_dataset'] = pasta_dataset
         st.session_state['dados'] = dados
 
 
